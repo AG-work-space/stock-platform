@@ -1,0 +1,136 @@
+.wrap {
+  margin: 0 28px 28px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--border);
+  user-select: none;
+}
+
+.titleRow:hover { background: rgba(255,255,255,0.02); }
+
+.title {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+.titleRight { display: flex; align-items: center; gap: 12px; }
+
+.chevron { font-size: 10px; color: var(--muted); }
+
+.addForm {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 18px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--border);
+}
+
+.formInput { font-size: 12px; padding: 6px 10px; }
+
+.addBtn {
+  padding: 6px 16px;
+  border-radius: 8px;
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  font-size: 12px;
+  font-family: var(--font-sans);
+  cursor: pointer;
+}
+
+.addBtn:hover { opacity: 0.88; }
+
+.refreshBtn {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  font-size: 11px;
+  font-family: var(--font-sans);
+  cursor: pointer;
+}
+
+.refreshBtn:hover { color: var(--text); }
+.refreshBtn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.formErr {
+  padding: 0 18px 10px;
+  font-size: 11px;
+  color: var(--red);
+}
+
+.empty {
+  padding: 20px 18px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.tableWrap { overflow-x: auto; }
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  font-family: var(--font-mono);
+}
+
+.table th {
+  text-align: right;
+  padding: 8px 14px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  border-bottom: 1px solid var(--border);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.table th:first-child, .table td:first-child { text-align: left; }
+
+.table td {
+  text-align: right;
+  padding: 10px 14px;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.table tbody tr:last-child td { border-bottom: none; }
+.table tbody tr:hover td { background: rgba(255,255,255,0.02); }
+
+.symCell { font-weight: 500; color: var(--text); }
+
+.table tfoot td {
+  font-weight: 500;
+  border-top: 1px solid var(--border);
+  border-bottom: none;
+  padding: 10px 14px;
+}
+
+.totalLabel { text-align: left; color: var(--muted); }
+
+.removeBtn {
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0 4px;
+}
+
+.removeBtn:hover { color: var(--red); }
